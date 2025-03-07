@@ -1,0 +1,21 @@
+audio {
+    width: 100%;
+}
+
+.transcript {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.transcript_line {
+    padding: 5px;
+    transition: background 0.3s ease;
+}
+
+.transcript_line.active {
+    background: yellow;
+    font-weight: bold;
+}

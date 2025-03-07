@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio Transcripts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+
+<body>
+    <h1>Audio Transcripts</h1>
+
+    <div id="container">
+        <!-- for loop of data variable in twig-->
+        {% for item in data %}
+        <div class="transcripts">
+            <h2>
+                <a href="{{ item.nid }}.html">{{ item.nid }} - {{ item.title }} ({{ item.lang }})</a>
+            </h2>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+
+</html>
