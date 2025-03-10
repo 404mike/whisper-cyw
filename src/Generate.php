@@ -60,6 +60,7 @@ class Generate {
             'url' => $url,
             'title' => $title,
             'lang' => $lang,
+            'nid' => $nid,
         ]);
 
         file_put_contents('./dist/'.$nid.'.html', $output);
