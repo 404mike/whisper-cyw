@@ -52,7 +52,7 @@ class Generate {
     private function render(string $nid, string $lang, string $transcription, string $url, string $title)
     {
         $template = $this->twig->load('template.twig');
-        $title = 'Transcription for ' . $nid;
+        $title = '<a target="_blank" href="https://www.peoplescollection.wales/itesm/'.$nid.'">Transcription for ' . $nid . '</a>';
         $content = FormatTranscript::formatVTT($transcription);
         $output = $template->render([
             'title' => $title, 
