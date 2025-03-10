@@ -71,6 +71,7 @@ class Generate {
         $title = 'Transcriptions';
         $output = $template->render([
             'data' => $this->items,
+            'count' => count($this->items),
         ]);
 
         file_put_contents('./dist/index.html', $output);
