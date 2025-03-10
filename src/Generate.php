@@ -12,6 +12,7 @@ class Generate {
 
     private Environment $twig;
     private array $items = [];
+    private array $languages = [];
 
     public function __construct()
     {
@@ -39,6 +40,7 @@ class Generate {
         }
 
         $lang = file_get_contents('./data/' . $nid . '.lang.txt');
+        $this->setLanaguages($lang);
         $transcription = file_get_contents('./data/' . $nid . '.vtt');
         $this->render($nid, $lang, $transcription, $url, $title);
         $this->items[] = [
@@ -48,6 +50,13 @@ class Generate {
             'lang' => $lang,
         ];
     }
+
+    private function setLanaguages(string $lang)
+    {
+        if(!in_array($lang, $this->languages)) {
+            $this->languages[] = $lang;
+        }
+    } 
 
     private function render(string $nid, string $lang, string $transcription, string $url, string $title)
     {
@@ -73,6 +82,7 @@ class Generate {
         $output = $template->render([
             'data' => $this->items,
             'count' => count($this->items),
+            'languages' => $this->languages,
         ]);
 
         file_put_contents('./dist/index.html', $output);

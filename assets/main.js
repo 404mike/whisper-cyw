@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const audio = document.getElementById("audioPlayer");
+    if(!audio) return;
+
     const transcriptContainer = document.getElementById("transcript_container");
     const transcriptLines = document.querySelectorAll(".transcript_line");
 
@@ -43,3 +45,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+function filterSelection(lang) {
+    let count = 0;
+
+    if (lang === "all") {
+        const articles = document.querySelectorAll("[data-lang]");
+        articles.forEach((article) => {
+            article.style.display = "block";
+            count++;
+        });
+
+        document.getElementById("article_count").innerText = count + ' Audio Transcripts';
+        return;
+    }
+
+    const articles = document.querySelectorAll("[data-lang]");
+    articles.forEach((article) => {
+        let articleLang = article.getAttribute("data-lang");
+        if (articleLang === lang) {
+            article.style.display = "block";
+            count++;
+        } else {
+            article.style.display = "none";
+        }
+    });
+    document.getElementById("article_count").innerText = count + ' Audio Transcripts';
+};

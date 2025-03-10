@@ -6,16 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/style.css">
+    <script src="../assets/main.js"></script>
 </head>
 
 
 <body>
-    <h1>{{ count }} Audio Transcripts</h1>
+
+    <div id="langFilter">
+        <p>Filter:</p>
+        <button onclick="filterSelection('all')">All</button>
+        {% for lang in languages %}
+        <button onclick="filterSelection('{{ lang }}')">{{ lang }}</button>
+        {% endfor %}
+    </div>
+
+    <h1 id="article_count">{{ count }} Audio Transcripts</h1>
 
     <div id="container">
         <!-- for loop of data variable in twig-->
         {% for item in data %}
-        <div class="transcripts">
+        <div class="transcripts" data-lang="{{ item.lang }}">
             <h2>
                 <a href="{{ item.nid }}.html">{{ item.nid }} - {{ item.title }} ({{ item.lang }})</a>
             </h2>
