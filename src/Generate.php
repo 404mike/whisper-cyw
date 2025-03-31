@@ -80,7 +80,7 @@ class Generate {
         $template = $this->twig->load('index.twig');
         $title = 'Transcriptions';
         $output = $template->render([
-            'data' => $this->items,
+            'data' => shuffle($this->items),
             'count' => count($this->items),
             'languages' => $this->languages,
         ]);
