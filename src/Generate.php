@@ -77,10 +77,11 @@ class Generate {
 
     private function createIndexPage()
     {
+        shuffle($this->items);
         $template = $this->twig->load('index.twig');
         $title = 'Transcriptions';
         $output = $template->render([
-            'data' => shuffle($this->items),
+            'data' => $this->items,
             'count' => count($this->items),
             'languages' => $this->languages,
         ]);
