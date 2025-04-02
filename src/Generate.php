@@ -13,12 +13,20 @@ class Generate {
     private Environment $twig;
     private array $items = [];
     private array $languages = [];
+    private array $langkeys = [];
 
     public function __construct()
     {
+        $this->setLangKeys();
         $this->twig = new Environment(new FilesystemLoader('./templates'));
         $this->getAudioTranscript();
         $this->createIndexPage();
+    }
+
+    private function setLangKeys()
+    {
+        $json = file_get_contents('./src/langkeys.json');
+        $this->langkeys = json_decode($json, true);
     }
 
     private function getAudioTranscript()
@@ -47,9 +55,14 @@ class Generate {
             'nid' => $nid,
             'url' => $url,
             'title' => $title,
-            'lang' => $lang,
+            'lang' => $lang
         ];
     }
+
+    private function getLangKey(string $lang)
+    {
+        return $this->langkeys[$lang] ?? $lang;
+    } 
 
     private function setLanaguages(string $lang)
     {
@@ -83,10 +96,21 @@ class Generate {
         $output = $template->render([
             'data' => $this->items,
             'count' => count($this->items),
-            'languages' => $this->languages,
+            'languages' => $this->updateLangKeys()
         ]);
 
         file_put_contents('./dist/index.html', $output);
+    }
+
+    private function updateLangKeys()
+    {
+        $arr = [];
+
+        foreach($this->languages as $lang) {
+            $arr[$lang] = $this->getLangKey($lang);
+        }
+
+        return $arr;
     }
 }
 

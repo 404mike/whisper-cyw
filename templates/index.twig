@@ -15,9 +15,13 @@
     <div id="langFilter">
         <p>Filter:</p>
         <button onclick="filterSelection('all')">All</button>
-        {% for lang in languages %}
-        <button onclick="filterSelection('{{ lang }}')">{{ lang }}</button>
+        {% for key, lang in languages %}
+        <button onclick="filterSelection('{{ key }}')">{{ lang }} ({{ key }})</button>
         {% endfor %}
+
+        <p><a target="_blank"
+                href="https://github.com/openai/whisper/blob/main/whisper/tokenizer.py#L10C1-L111C2">Language
+                Keys</a></p>
     </div>
 
     <h1 id="article_count">{{ count }} Audio Transcripts</h1>
