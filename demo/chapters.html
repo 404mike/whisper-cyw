@@ -22,6 +22,33 @@
             margin: 10px 0;
             width: 30%;
         }
+
+        .ai {
+            width: 50%;
+            float: left;
+            height: 600px;
+            overflow: auto;
+        }
+
+        .ai pre {
+            margin: 10px auto;
+            /* Center the pre block */
+            padding: 10px;
+            max-width: 80%;
+            /* Limit the width to 80% of the container */
+            background-color: #f4f4f4;
+            /* Optional: Add a light background for better readability */
+            border: 1px solid #ddd;
+            /* Optional: Add a border */
+            border-radius: 5px;
+            /* Optional: Add rounded corners */
+            overflow-x: auto;
+            /* Enable horizontal scrolling if content overflows */
+            word-wrap: break-word;
+            /* Ensure long words break properly */
+            text-align: left;
+            /* Align text inside the pre block to the left */
+        }
     </style>
 
     <a href="index.html">Back to list</a>
@@ -185,9 +212,239 @@
             change across the empire.</div>
     </div>
 
-    <h2>Chapters</h2>
-    <div id="chapters">
 
+
+    <h2>Chapters</h2>
+    <div id="chapters"></div>
+
+    <hr />
+
+    <div>
+
+        <h2>LLM responses</h2>
+        <div style="font-style: italic;"><strong>Prompt: </strong>Read through the following VTT file and create
+            chapters for the different
+            topics. Output the response as
+            VALID JSON only. Each JSON object should contain a "title" and "start time": ....</div>
+
+        <div class="ai">
+            <h3>gemma-3-12b-it</h3>
+            <pre>
+[
+    {
+        "title": "Introduction: Context - Race Riots of 1919",
+        "start time": "00:00:00.000"
+    },
+    {
+        "title": "India and the Beginning of Empire's Collapse",
+        "start time": "00:00:12.000"
+    },
+    {
+        "title": "Mahatma Gandhi Quote",
+        "start time": "00:00:18.000"
+    },
+    {
+        "title": "Harold Macmillan's 'Wind of Change' Speech - Overview",
+        "start time": "00:00:29.000"
+    },
+    {
+        "title": "Macmillan's Speech Excerpt 1",
+        "start time": "00:00:59.000"
+    },
+    {
+        "title": "Macmillan's Speech Excerpt 2",
+        "start time": "00:01:08.000"
+    },
+    {
+        "title": "India's Uprisings and Gandhi's Influence",
+        "start time": "00:01:30.000"
+    },
+    {
+        "title": "Gandhi's Return from South Africa & Swadeshi Movement",
+        "start time": "00:01:49.000"
+    },
+    {
+        "title": "Indian Contribution to World War I - Military Deaths",
+        "start time": "00:02:23.000"
+    },
+    {
+        "title": "Indian Merchant Seamen in WWI and Their Treatment",
+        "start time": "00:02:58.000"
+    },
+    {
+        "title": "Post-War Repatriation Issues & Discrimination",
+        "start time": "00:03:37.000"
+    },
+    {
+        "title": "The Jallinwalabagh Massacre and its Impact",
+        "start time": "00:05:30.000"
+    },
+    {
+        "title": "Lord Milner's Prediction & Rising Racial Tensions",
+        "start time": "00:09:16.000"
+    }
+]
+            </pre>
+        </div>
+
+        <div class="ai">
+            <h3>meta-llama-3.1-8b-instruct</h3>
+            <pre>
+{
+    "chapters": [
+        {
+            "title": "Chapter 22 in our continuing story that follows on from the race riots of 1919",
+            "start_time": "00:00:00.000"
+        },
+        {
+            "title": "India, the beginning of the collapse of empire.",
+            "start_time": "00:00:12.000"
+        },
+        {
+            "title": "The quote from Mahatma Gandhi",
+            "start_time": "00:18:000.000"
+        },
+        {
+            "title" : "The Wind of Change speech",
+            "start_time": "00:38:000"
+        },
+        {
+            "title" : "India during World War I and the impact on Indian merchant seamen",
+            "start_time": "02:28:000"
+        },
+        {
+            "title" : "Treatment of Indian merchant seamen, including repatriation and the Coloured Seamen Order",
+            "start_time": "05:37.000"
+        },
+        {
+            "title" : "The Jallinwalabagh Massacre",
+            "start_time": "07:39.000"
+        },
+        {
+            "title" : "Gandhi's revolution and the impact of Indian merchant seamen's return to India",
+            "start_time": "09:01.000"
+        },
+        {
+            "title" : "The end of the British Empire, including Africa, China, the Caribbean and the Middle East",
+            "start_time": "09:08.000"
+        }
+    ]
+}
+            </pre>
+        </div>
+
+        <div class="ai">
+            <h3>Gemini 2.5</h3>
+            <pre>
+[
+  {
+    "title": "Introduction: India and the Collapse of Empire",
+    "start time": "00:00:00.000"
+  },
+  {
+    "title": "Gandhi Quote",
+    "start time": "00:00:18.000"
+  },
+  {
+    "title": "Harold Macmillan and the 'Wind of Change'",
+    "start time": "00:00:29.000"
+  },
+  {
+    "title": "Gandhi's Return and the Swadeshi Movement",
+    "start time": "00:01:30.000"
+  },
+  {
+    "title": "India's Contribution and Cost in World War I",
+    "start time": "00:02:23.000"
+  },
+  {
+    "title": "Laskers: Indian Merchant Seamen in WWI",
+    "start time": "00:02:58.000"
+  },
+  {
+    "title": "Post-War Repatriation Issues and Discrimination",
+    "start time": "00:05:30.000"
+  },
+  {
+    "title": "Impact of Returning Servicemen on India",
+    "start time": "00:06:44.000"
+  },
+  {
+    "title": "The Amritsar Massacre (Jallianwala Bagh)",
+    "start time": "00:07:28.000"
+  },
+  {
+    "title": "India Leads Anti-Colonial Movement",
+    "start time": "00:09:01.000"
+  },
+  {
+    "title": "Lord Milner on Resentment and Future Impact",
+    "start time": "00:09:24.000"
+  },
+  {
+    "title": "Colonial Office Memo: Gilbert Grindle on Changing Attitudes",
+    "start time": "00:10:45.000"
+  },
+  {
+    "title": "Conclusion: Race Riots' Long-Term Effect on Empire",
+    "start time": "00:10:55.000"
+  }
+]
+            </pre>
+        </div>
+
+        <div class="ai">
+            <h3>OpenAI ChatGPT 4</h3>
+            <pre>
+[
+    {
+        "title": "Introduction to Chapter 22",
+        "start time": "00:00:00.000"
+    },
+    {
+        "title": "India's Role in the Collapse of the British Empire",
+        "start time": "00:00:12.000"
+    },
+    {
+        "title": "Quote from Mahatma Gandhi",
+        "start time": "00:00:18.000"
+    },
+    {
+        "title": "Wind of Change Speech",
+        "start time": "00:00:29.000"
+    },
+    {
+        "title": "Indian Uprisings and Gandhi's Influence",
+        "start time": "00:01:30.000"
+    },
+    {
+        "title": "India in World War I",
+        "start time": "00:02:23.000"
+    },
+    {
+        "title": "Laskers: Indian Merchant Seamen in WWI",
+        "start time": "00:03:06.000"
+    },
+    {
+        "title": "The Repatriation Issue Post WWI",
+        "start time": "00:05:30.000"
+    },
+    {
+        "title": "The Jallinwalabagh Massacre",
+        "start time": "00:07:39.000"
+    },
+    {
+        "title": "The Symbolism of Jallinwalabagh",
+        "start time": "00:08:45.000"
+    },
+    {
+        "title": "Conclusion: Impact of India on the End of the British Empire",
+        "start time": "00:09:01.000"
+    }
+]
+
+            </pre>
+        </div>
     </div>
 
 </body>
