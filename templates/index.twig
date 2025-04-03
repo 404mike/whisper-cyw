@@ -16,7 +16,7 @@
         <p>Filter:</p>
         <button onclick="filterSelection('all')">All</button>
         {% for key, lang in languages %}
-        <button onclick="filterSelection('{{ key }}')">{{ lang }} ( {{ key }})</button>
+        <button onclick="filterSelection('{{ key }}' , '{{ lang }}')">{{ lang }} ( {{ key }})</button>
         {% endfor %}
 
         <p><a target="_blank"

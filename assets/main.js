@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function filterSelection(lang) {
+function filterSelection(lang, language) {
     let count = 0;
 
     if (lang === "all") {
@@ -71,5 +71,5 @@ function filterSelection(lang) {
             article.style.display = "none";
         }
     });
-    document.getElementById("article_count").innerText = count + ' Audio Transcripts';
+    document.getElementById("article_count").innerText = count + ' Audio Transcripts - (' + language + ')';
 };
