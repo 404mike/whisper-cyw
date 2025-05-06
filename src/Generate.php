@@ -79,13 +79,19 @@ class Generate {
         $output = $template->render([
             'title' => $title, 
             'content' => $content,
-            'url' => $url,
+            'url' => $this->formatAudioUrl($url),
             'title' => $title,
             'lang' => $lang,
             'nid' => $nid,
         ]);
 
         file_put_contents('./dist/'.$nid.'.html', $output);
+    }
+
+    private function formatAudioUrl(string $url)
+    {
+        $url = str_replace('#', '%23', $url);
+        return $url;
     }
 
     private function createIndexPage()
