@@ -91,7 +91,30 @@ class Generate {
     private function formatAudioUrl(string $url)
     {
         $url = str_replace('#', '%23', $url);
-        return $url;
+
+       // url encode the file name
+        $filename = basename($url);
+        $encoded = rawurlencode($filename);
+
+        $newUrl = str_replace($filename, $encoded, $url);
+        // echo $newUrl . "\n";
+
+        // $isAccessible = $this->isAudioFileAccessible($newUrl);
+
+        // if(!$isAccessible) {
+        //     echo "Audio file not accessible: $newUrl\n";
+        //     die();
+        //     return '';
+        // }
+        // echo "Checking audio file: $url\n";
+
+        return $newUrl;
+    }
+
+    private function isAudioFileAccessible(string $url)
+    {
+        $headers = get_headers($url, 1);
+        return strpos($headers[0], '200') !== false;
     }
 
     private function createIndexPage()
