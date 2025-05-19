@@ -21,8 +21,8 @@ foreach ($data as $key => $val) {
     }
 }
 
-$randomEn = array_rand($en, 20);
-$randomCy = array_rand($cy, 20);
+$randomEn = array_rand($en, 40);
+$randomCy = array_rand($cy, 40);
 
 $arr = [
     'en' => $randomEn,
