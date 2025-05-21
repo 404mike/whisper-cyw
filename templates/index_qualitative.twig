@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio Transcripts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- <script src="../assets/main.js"></script> -->
+</head>
+
+
+<body>
+
+    <div id="container">
+        <!-- for loop of data variable in twig-->
+        {% for item in items %}
+        {% set nids = item|keys %}
+        {% set nid = nids[0] %}
+        <h2>
+            <a href="{{ nid }}.html">{{ nid }}</a>
+        </h2>
+        {% endfor %}
+    </div>
+
+</body>
+
+
+</html>

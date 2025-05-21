@@ -1,0 +1,40 @@
+audio {
+    width: 100%;
+}
+
+.transcription {
+    width: 32%;
+    float: left;
+    padding: 10px;
+    /* max-height: 300px; */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* .transcription :nth-child(n+2) {
+    border-left: 1px solid #ccc;
+}
+
+.transcript {} */
+
+.transcript_line {
+    padding: 5px;
+    transition: background 0.3s ease;
+    display: block;
+}
+
+.transcript_line.active {
+    background: yellow;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

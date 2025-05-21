@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ nid }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../assets/style_q.css">
+    <script src="../../assets/main_q.js"></script>
+</head>
+
+<body>
+
+    <a href="index.html">Back to list</a>
+
+    <h1>{{ title|raw }}</h1>
+
+    <audio id="audioPlayer" controls>
+        <source src="{{ url }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="content">
+        {% set labels = ['A', 'B', 'C'] %}
+        {% for key,value in transcriptions %}
+        <div class="transcription">
+
+            <h2>{{ labels[loop.index0] }}</h2>
+            {{ value|raw }}<br>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- <p>{{ content|raw }}</p> -->
+</body>
+
+</html>

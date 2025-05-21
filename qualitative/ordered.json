@@ -1,0 +1,422 @@
+[
+    {
+        "1220101": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "1765066": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "1780826": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "1862806": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "2062321": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "2156531": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "2190046": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "890511": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "1220461": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "1247876": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "1724706": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "1724916": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "19095": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "2019841": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "2062306": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "2149946": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "2156586": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "28036": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "37492": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "38020": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "461102": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "461530": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "462542": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "464695": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "465129": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "484619": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "580360": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "582260": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "991176": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "2147206": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "1832306": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "1832326": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "1832416": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "1899341": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "19083": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "2135641": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "25505": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38094": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "38106": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "38241": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38373": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "38415": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38421": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38432": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38509": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "38752": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "38772": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "38802": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "39015": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "39107": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "458524": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "459383": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "459781": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "463906": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
+        "464072": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "464115": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "464354": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "464487": [
+            "medium",
+            "large",
+            "turbo"
+        ]
+    },
+    {
+        "548885": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "548984": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    }
+]
