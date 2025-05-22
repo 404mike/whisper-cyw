@@ -94,10 +94,19 @@ class Generate {
         $audioFiles = json_decode(file_get_contents('audio.json'), true);
         foreach($audioFiles as $audioFile) {
             if($audioFile['nid'] == $nid) {
-                return $audioFile['url'];
+                return $this->formatAudioUrl($audioFile['url']);
             }
         }
         return false;
+    }
+
+     private function formatAudioUrl(string $url)
+    {
+        $url = str_replace('#', '%23', $url);
+        $filename = basename($url);
+        $encoded = rawurlencode($filename);
+        $newUrl = str_replace($filename, $encoded, $url);
+        return $newUrl;
     }
 
     private function createIndex()
