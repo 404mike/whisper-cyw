@@ -1,6 +1,8 @@
 <?php
 
 $data = json_decode(file_get_contents('./data.json'), true);
+
+
 $en_transcriptions = $data['en'];
 $cy_transcriptions = $data['cy'];
 
