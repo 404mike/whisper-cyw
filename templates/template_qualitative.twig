@@ -23,8 +23,7 @@
     <div class="content">
         {% set labels = ['A', 'B', 'C'] %}
         {% for key,value in transcriptions %}
-        <div class="transcription">
-
+        <div class="transcription" data-model="{{ key }}">
             <h2>{{ labels[loop.index0] }}</h2>
             {{ value|raw }}<br>
         </div>
