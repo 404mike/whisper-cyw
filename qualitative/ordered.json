@@ -2,26 +2,19 @@
     {
         "1220101": [
             "turbo",
-            "large",
-            "medium"
+            "medium",
+            "large"
         ]
     },
     {
         "1765066": [
             "large",
-            "turbo",
-            "medium"
+            "medium",
+            "turbo"
         ]
     },
     {
         "1780826": [
-            "large",
-            "turbo",
-            "medium"
-        ]
-    },
-    {
-        "1862806": [
             "medium",
             "large",
             "turbo"
@@ -30,64 +23,36 @@
     {
         "2062321": [
             "turbo",
-            "large",
-            "medium"
-        ]
-    },
-    {
-        "2156531": [
-            "turbo",
-            "large",
-            "medium"
-        ]
-    },
-    {
-        "2190046": [
-            "medium",
-            "large",
-            "turbo"
-        ]
-    },
-    {
-        "890511": [
-            "medium",
-            "large",
-            "turbo"
-        ]
-    },
-    {
-        "1220461": [
-            "turbo",
-            "large",
-            "medium"
-        ]
-    },
-    {
-        "1247876": [
-            "turbo",
             "medium",
             "large"
         ]
     },
     {
-        "1724706": [
+        "2156531": [
             "medium",
             "large",
             "turbo"
+        ]
+    },
+    {
+        "1724706": [
+            "large",
+            "turbo",
+            "medium"
         ]
     },
     {
         "1724916": [
             "large",
-            "turbo",
-            "medium"
+            "medium",
+            "turbo"
         ]
     },
     {
         "19095": [
-            "medium",
+            "large",
             "turbo",
-            "large"
+            "medium"
         ]
     },
     {
@@ -106,51 +71,51 @@
     },
     {
         "2149946": [
+            "medium",
             "turbo",
-            "large",
-            "medium"
+            "large"
         ]
     },
     {
         "2156586": [
-            "medium",
-            "turbo",
-            "large"
-        ]
-    },
-    {
-        "28036": [
-            "turbo",
-            "medium",
-            "large"
-        ]
-    },
-    {
-        "37492": [
-            "medium",
-            "turbo",
-            "large"
-        ]
-    },
-    {
-        "38020": [
-            "turbo",
-            "large",
-            "medium"
-        ]
-    },
-    {
-        "461102": [
             "medium",
             "large",
             "turbo"
         ]
     },
     {
+        "28036": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "37492": [
+            "large",
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "38020": [
+            "medium",
+            "turbo",
+            "large"
+        ]
+    },
+    {
+        "461102": [
+            "turbo",
+            "large",
+            "medium"
+        ]
+    },
+    {
         "461530": [
             "turbo",
-            "medium",
-            "large"
+            "large",
+            "medium"
         ]
     },
     {
@@ -162,114 +127,107 @@
     },
     {
         "464695": [
-            "large",
             "medium",
+            "large",
             "turbo"
         ]
     },
     {
         "465129": [
-            "turbo",
-            "large",
-            "medium"
-        ]
-    },
-    {
-        "484619": [
             "medium",
             "turbo",
             "large"
         ]
     },
     {
-        "580360": [
-            "turbo",
+        "484619": [
+            "large",
             "medium",
+            "turbo"
+        ]
+    },
+    {
+        "580360": [
+            "medium",
+            "turbo",
             "large"
         ]
     },
     {
         "582260": [
             "turbo",
-            "medium",
-            "large"
+            "large",
+            "medium"
         ]
     },
     {
         "991176": [
-            "medium",
+            "turbo",
             "large",
-            "turbo"
+            "medium"
         ]
     },
     {
         "2147206": [
             "turbo",
-            "large",
-            "medium"
+            "medium",
+            "large"
         ]
     },
     {
         "1832306": [
-            "turbo",
             "medium",
-            "large"
+            "large",
+            "turbo"
         ]
     },
     {
         "1832326": [
-            "medium",
             "large",
-            "turbo"
+            "turbo",
+            "medium"
         ]
     },
     {
         "1832416": [
-            "large",
             "medium",
-            "turbo"
+            "turbo",
+            "large"
         ]
     },
     {
         "1899341": [
-            "turbo",
-            "medium",
-            "large"
-        ]
-    },
-    {
-        "19083": [
-            "medium",
-            "turbo",
-            "large"
-        ]
-    },
-    {
-        "2135641": [
-            "turbo",
             "large",
-            "medium"
-        ]
-    },
-    {
-        "25505": [
             "medium",
-            "large",
             "turbo"
         ]
     },
     {
-        "38094": [
+        "19083": [
             "large",
             "turbo",
             "medium"
         ]
     },
     {
-        "38106": [
-            "turbo",
+        "2135641": [
             "large",
-            "medium"
+            "medium",
+            "turbo"
+        ]
+    },
+    {
+        "25505": [
+            "turbo",
+            "medium",
+            "large"
+        ]
+    },
+    {
+        "38094": [
+            "turbo",
+            "medium",
+            "large"
         ]
     },
     {
@@ -281,37 +239,30 @@
     },
     {
         "38373": [
-            "turbo",
-            "medium",
-            "large"
-        ]
-    },
-    {
-        "38415": [
-            "large",
-            "turbo",
-            "medium"
-        ]
-    },
-    {
-        "38421": [
             "medium",
             "large",
             "turbo"
         ]
     },
     {
-        "38432": [
-            "large",
+        "38415": [
             "turbo",
+            "large",
             "medium"
         ]
     },
     {
-        "38509": [
+        "38432": [
+            "medium",
             "large",
-            "turbo",
-            "medium"
+            "turbo"
+        ]
+    },
+    {
+        "38509": [
+            "medium",
+            "large",
+            "turbo"
         ]
     },
     {
@@ -323,37 +274,16 @@
     },
     {
         "38772": [
-            "turbo",
-            "medium",
-            "large"
-        ]
-    },
-    {
-        "38802": [
-            "large",
-            "medium",
-            "turbo"
-        ]
-    },
-    {
-        "39015": [
             "large",
             "turbo",
             "medium"
-        ]
-    },
-    {
-        "39107": [
-            "large",
-            "medium",
-            "turbo"
         ]
     },
     {
         "458524": [
-            "turbo",
+            "medium",
             "large",
-            "medium"
+            "turbo"
         ]
     },
     {
@@ -365,58 +295,58 @@
     },
     {
         "459781": [
-            "turbo",
             "large",
+            "turbo",
             "medium"
         ]
     },
     {
         "463906": [
             "turbo",
-            "large",
-            "medium"
+            "medium",
+            "large"
         ]
     },
     {
         "464072": [
-            "medium",
-            "large",
-            "turbo"
-        ]
-    },
-    {
-        "464115": [
-            "large",
-            "turbo",
-            "medium"
-        ]
-    },
-    {
-        "464354": [
             "medium",
             "turbo",
             "large"
         ]
     },
     {
-        "464487": [
-            "large",
+        "464115": [
             "medium",
+            "large",
             "turbo"
+        ]
+    },
+    {
+        "464354": [
+            "large",
+            "turbo",
+            "medium"
+        ]
+    },
+    {
+        "464487": [
+            "turbo",
+            "large",
+            "medium"
         ]
     },
     {
         "548885": [
+            "turbo",
             "large",
-            "medium",
-            "turbo"
+            "medium"
         ]
     },
     {
         "548984": [
+            "turbo",
             "large",
-            "medium",
-            "turbo"
+            "medium"
         ]
     }
 ]
