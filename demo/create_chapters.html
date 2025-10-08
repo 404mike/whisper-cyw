@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1306286</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        audio { width: 100%; max-width: 600px; margin-top: 20px; }
+        #chapter-buttons { margin-top: 20px; }
+        #chapter-buttons button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #chapter-container { margin-top: 24px; max-width: 700px; }
+        .chapter {
+            border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 12px;
+            background: #fafafa;
+        }
+        .chapter__header {
+            display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px;
+        }
+        .chapter__meta { font-size: 14px; color: #555; }
+        .chapter__fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .chapter__fields label { font-size: 13px; color: #333; display: block; margin-bottom: 4px; }
+        .chapter__fields input[type="text"] { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+        .chapter__delete {
+            background: #fff3f3; border: 1px solid #f0caca; color: #a33; padding: 6px 10px; border-radius: 6px; cursor: pointer;
+        }
+        .chapter__delete:hover { background: #ffe9e9; }
+        .timestamp { font-variant-numeric: tabular-nums; }
+    </style>
+</head>
+
+<body>
+
+    <audio id="audioPlayer" controls>
+        <source src="https://www.peoplescollection.wales/sites/default/files/audio/2020/February/Chapter%2022%20India%20%26%20The%20Collapse%20of%20Empire.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="chapter-buttons">
+        <button id="create-chapter-button">Create Chapter</button>
+    </div>
+
+    <div id="chapter-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audioPlayer = document.getElementById('audioPlayer');
+            const createChapterButton = document.getElementById('create-chapter-button');
+            const chapterContainer = document.getElementById('chapter-container');
+
+            let chapterCount = 0;
+            const chapters = [];
+
+            function formatTime(seconds) {
+                const s = Math.floor(seconds % 60);
+                const m = Math.floor((seconds / 60) % 60);
+                const h = Math.floor(seconds / 3600);
+                const pad = (n) => n.toString().padStart(2, '0');
+                return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
+            }
+
+            function createChapterBlock(timeInSeconds) {
+                chapterCount += 1;
+                const id = chapterCount;
+                const pretty = formatTime(timeInSeconds);
+
+                const wrapper = document.createElement('div');
+                wrapper.className = 'chapter';
+                wrapper.dataset.id = id;
+                wrapper.dataset.time = timeInSeconds;
+
+                wrapper.innerHTML = `
+                    <div class="chapter__header">
+                        <div class="chapter__meta">
+                            <strong>Chapter ${id}</strong>
+                            <span class="timestamp">(@ ${pretty})</span>
+                        </div>
+                        <button type="button" class="chapter__delete" aria-label="Delete chapter ${id}">Delete</button>
+                    </div>
+
+                    <div class="chapter__fields">
+                        <div>
+                            <label for="chapter-${id}-title-cy">Teitl (Cymraeg)</label>
+                            <input type="text" id="chapter-${id}-title-cy"
+                                   name="chapters[${id}][title_cy]" placeholder="e.e. Cyflwyniad">
+                        </div>
+                        <div>
+                            <label for="chapter-${id}-title-en">Title (English)</label>
+                            <input type="text" id="chapter-${id}-title-en"
+                                   name="chapters[${id}][title_en]" placeholder="e.g. Introduction">
+                        </div>
+                    </div>
+
+                    <!-- Link the time to this chapter as a proper form field -->
+                    <input type="hidden" name="chapters[${id}][time]" value="${timeInSeconds}">
+                `;
+
+                chapterContainer.appendChild(wrapper);
+            }
+
+            createChapterButton.addEventListener('click', () => {
+                audioPlayer.pause();
+                const t = audioPlayer.currentTime || 0;
+                createChapterBlock(t);
+            });
+
+            chapterContainer.addEventListener('click', (e) => {
+                const btn = e.target.closest('.chapter__delete');
+                if (!btn) return;
+
+                const chapterEl = btn.closest('.chapter');
+                if (!chapterEl) return;
+
+                const id = Number(chapterEl.dataset.id);
+                chapterEl.remove();
+            });
+        });
+    </script>
+</body>
+</html>
